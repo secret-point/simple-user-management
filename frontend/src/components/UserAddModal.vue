@@ -2,7 +2,7 @@
   <div>
     <el-dialog
       v-model="modalOpen"
-      title="Edit User"
+      title="Add User"
       width="500"
       @close="closeModal()"
       align-center
@@ -17,14 +17,6 @@
         size="large"
         status-icon
       >
-        <el-form-item label="User ID" prop="userID">
-          <el-input
-            v-model.number="ruleForm.userID"
-            type="text"
-            autocomplete="off"
-            placeholder="30"
-          />
-        </el-form-item>
         <el-form-item label="First Name" prop="firstName">
           <el-input v-model="ruleForm.firstName" placeholder="John" />
         </el-form-item>
@@ -51,7 +43,7 @@
             >
               Add
             </el-button>
-            <el-button @click="closeModal()">Candel</el-button>
+            <el-button @click="closeModal()">Cancel</el-button>
           </el-form-item>
         </div>
       </el-form>
