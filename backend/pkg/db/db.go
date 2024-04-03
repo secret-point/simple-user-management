@@ -15,7 +15,7 @@ var DBConnection *mongo.Client
 
 // ConnectDB initializes the connection to MongoDB.
 func ConnectDB() *mongo.Client {
-	client, err := mongo.Connect(context.Background(), options.Client().ApplyURI("mongodb://localhost:27017"))
+	client, err := mongo.Connect(context.Background(), options.Client().ApplyURI("mongodb+srv://secretpoint2020:Ibegyourpardon@cluster0.7uwlvlg.mongodb.net"))
 	if err != nil {
 			log.Error("Failed to connect to database:", err)
 	}
