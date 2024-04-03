@@ -80,7 +80,7 @@ const users = ref([]);
 const page = ref(1);
 const search = ref("");
 const selectedUser = ref<IUser>();
-const limit = ref(5); // Default page size
+const limit = ref(5);
 const totalPages = ref(10);
 
 onMounted(async () => {
